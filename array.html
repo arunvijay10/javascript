@@ -48,11 +48,20 @@
         function display() {
             var store = document.getElementById("inp").value
             document.getElementById("showme").innerHTML=store
+            console.log(store)
+            if(store=="arun vijay")
+            {
+                console.log("He Is A Trillionare")
+                alert("He Is A Trillionare")
+            }
+            else if(store=="Arun Vijay")
+            {
+                alert("He Is A Trillionare And A Helping Hand")
+
+            }
         }
 
-        function change() {
-
-        }
+        
 
         function show() {
             confirm("Please right Click On The Inspect Element and Go To Console To See The Output");
