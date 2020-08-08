@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        body
-        {
-            margin:0px;
+        body {
+            margin: 0px;
         }
-        h1
-        {
+
+        .same {
             color: rgb(0, 255, 149);
             height: 100px;
             width: 100%;
@@ -20,8 +21,40 @@
             text-align: center;
             padding-top: 50px;
             margin-top: 10px;
-        };
+        }
+
+        ;
+
+        .info {
+            color: yellow;
+            text-align: center;
+            
+        }
+
+        ;
     </style>
-    <h1>Java Scripting</h1>
+    <h1 class="same">Java Scripting</h1><br>
+    <marquee class="same">Script var let const function and Onclick</marquee>
+    <p class="info">Values Using Var Let Const</p>
+    <button onclick="info()">click</button>
+    <script>
+        function info() {
+            console.log("You Have Clicked Me")
+        }
+        var x = 5;
+        var x = 6;
+        console.log(x);
+        console.log("The latest Value or the last Value Is been printed on the console")
+        let y = 5;
+        // let y=6;
+        console.log(y);
+        console.log("SyntaxError: redeclaration of let y");
+        const z = 5;
+        // const z = 6;
+        console.log(z);
+        console.log("SyntaxError: redeclaration of const z");
+
+    </script>
 </body>
+
 </html>
