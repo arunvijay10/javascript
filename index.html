@@ -23,15 +23,27 @@
             margin-top: 10px;
         }
 
-        ;
+
 
         .info {
-            color: yellow;
-            text-align: center;
+            color: hotpink;
+             text-align: center;
 
         }
 
-        ;
+        .toknow {
+            background-color: red;
+            height: 128px;
+            width: 1354px;
+            text-decoration: none;
+        }
+        .ref
+        {
+            text-decoration: none;
+            font-size: 101px;
+            padding: 494px;
+        }
+
     </style>
     <h1 class="same">Java Scripting</h1><br>
     <marquee class="same">Script var let const function and Onclick</marquee>
@@ -47,23 +59,31 @@
     <input type="text" id="f2num"><br>
 
     <p class="same"> Choose What action To Be performed</p><br>
-    
+
     <input type="radio" name="actions" onclick="action()" id="add">
-    <label for="add" >Add </label><br>
-    
+    <label for="add">Add </label><br>
+
     <input type="radio" name="actions" id="sub">
-    <label for="sub" >Sub</label><br>
-    
+    <label for="sub">Sub</label><br>
+
     <input type="radio" name="actions" id="mul">
     <label for="mul">Mul</label><br>
-    
+
     <input type="radio" name="actions" id="divide">
     <label for="divide">Divide</label><br>
-    
+
     <button onclick="action()">Check</button>
     <br>
     <label>Result:</label>
     <input type="text" style="margin: 4px;" id="ans"><br>
+    <hr>
+
+    <p class="toknow">
+        <a class="ref" href="array.html">Array</a>
+    </p>
+
+
+
     <script>
         function info() {
             console.log("You Have Clicked Me")
@@ -72,11 +92,11 @@
         }
 
         function action() {
-            if(action('add')){
-            var a = document.getElementById('f1num').value;
-            var b = document.getElementById('f2num').value;
-            var c = a+b;
-            document.getElementById('ans').value=+c;
+            if (action('add')) {
+                var a = document.getElementById('f1num').value;
+                var b = document.getElementById('f2num').value;
+                var c = a + b;
+                document.getElementById('ans').value = +c;
             }
         }
         var x = 5;
