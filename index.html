@@ -28,10 +28,12 @@
         .info {
             color: yellow;
             text-align: center;
-            
+
         }
 
         ;
+
+        
     </style>
     <h1 class="same">Java Scripting</h1><br>
     <marquee class="same">Script var let const function and Onclick</marquee>
@@ -39,28 +41,32 @@
     <button onclick="info()">click</button>
     <hr>
     <br>
-    <label>Enter First  Number</label>
-    <input type="text"><br>
+    <label>Enter First Number</label>
+    <input type="text" style="margin: 20px;"><br>
     <label>Enter Second Number</label>
-    <input type="text"><br>
+    <input type="text" ><br>
     <p class="same"> Choose What action To Be performed</p><br>
     <input type="radio" name="actions">
     <label for="add">Add </label><br>
     <input type="radio" name="actions">
-    <label for="sub" >Sub</label><br>
+    <label for="sub">Sub</label><br>
     <input type="radio" name="actions">
-    <label for="mul" >Mul</label><br>
-    <input type="radio"  name="actions">
+    <label for="mul">Mul</label><br>
+    <input type="radio" name="actions">
     <label for="divide">Divide</label><br>
     <button onclick="action()">Check</button>
+    <br>
+    <label>Result:</label>
+    <input type="text" style="margin: 4px;"><br>
     <script>
         function info() {
             console.log("You Have Clicked Me")
         }
 
-        function action()
-        {
-            console.log("What")
+        function action() {
+            var a;
+            var b;
+
         }
 
 
