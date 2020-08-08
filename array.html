@@ -30,7 +30,7 @@
             padding-right: 10px;
             padding-right: 12px;
             padding-top: 15px;
-            margin-left: 608px;  
+            margin-left: 608px;
             /* to move a btn from left to write we have use margin-left */
         }
     </style>
@@ -38,22 +38,29 @@
         <div class="div">Array</div>
     </h1>
     <button class="btn" ondblclick="show()">Read Message!</button>
-   <h1 onclick="change()">Change Colour</h1>
+    <br>
+
+    <input type="text" id="inp">
+    <button onclick="display()">Show-Text</button>
+    <h1 id="showme"></h1>
 
     <script>
-        alert("Welcome To Array")
-        function change()
-        {
-         
+        function display() {
+            var store = document.getElementById("inp").value
+            document.getElementById("showme").innerHTML=store
+        }
+
+        function change() {
+
         }
 
         function show() {
             confirm("Please right Click On The Inspect Element and Go To Console To See The Output");
         }
-        var arr=["arun vijay" ,25]
+        var arr = ["arun vijay", 25]
         console.log(arr);
-        console.log("This is the thing we want to see "+arr[0])
-        oopsarray=[{Name:"want's to be a software devloper"},{sucess:"this is a"}]
+        console.log("This is the thing we want to see " + arr[0])
+        oopsarray = [{ Name: "want's to be a software devloper" }, { sucess: "this is a" }]
         console.log(oopsarray[0])
     </script>
 </body>
