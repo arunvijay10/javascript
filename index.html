@@ -27,7 +27,7 @@
 
         .info {
             color: hotpink;
-             text-align: center;
+            text-align: center;
 
         }
 
@@ -37,82 +37,79 @@
             width: 1354px;
             text-decoration: none;
         }
-        .ref
-        {
+
+        .ref {
             text-decoration: none;
             font-size: 101px;
             padding: 494px;
         }
-
     </style>
-    <h1 class="same">Java Scripting</h1><br>
-    <marquee class="same">Script var let const function and Onclick</marquee>
-    <p class="info">Values Using Var Let Const</p>
-    <button onclick="info()">click</button>
-    <hr>
-    <br>
+    <div class="header">
+        <h1 class="same">Java Scripting</h1><br>
+        <marquee class="same">Script var let const function and Onclick</marquee>
+        <p class="info">Values Using Var Let Const</p>
+        <button onclick="info()">click</button>
+        <hr>
+        <br>
 
-    <label>Enter First Number</label>
-    <input type="text" style="margin: 20px;" id="f1num"><br>
+        <label>Enter First Number</label>
+        <input type="text" style="margin: 20px;" id="f1num"><br>
 
-    <label>Enter Second Number</label>
-    <input type="text" id="f2num"><br>
+        <label>Enter Second Number</label>
+        <input type="text" id="f2num"><br>
 
-    <p class="same"> Choose What action To Be performed</p><br>
+        <p class="same"> Choose What action To Be performed</p><br>
 
-    <input type="radio" name="actions" onclick="action()" id="add">
-    <label for="add">Add </label><br>
+        <input type="radio" name="actions" onclick="action('add')" id="add">
+        <label for="add">Add </label><br>
 
-    <input type="radio" name="actions" id="sub">
-    <label for="sub">Sub</label><br>
+        <input type="radio" name="actions" id="sub">
+        <label for="sub">Sub</label><br>
 
-    <input type="radio" name="actions" id="mul">
-    <label for="mul">Mul</label><br>
+        <input type="radio" name="actions" id="mul">
+        <label for="mul">Mul</label><br>
 
-    <input type="radio" name="actions" id="divide">
-    <label for="divide">Divide</label><br>
+        <input type="radio" name="actions" id="divide">
+        <label for="divide">Divide</label><br>
 
-    <button onclick="action()">Check</button>
-    <br>
-    <label>Result:</label>
-    <input type="text" style="margin: 4px;" id="ans"><br>
-    <hr>
+        <button onclick="action()">Check</button>
+        <br>
+        <label>Result:</label>
+        <input type="text" style="margin: 4px;" id="ans"><br>
+        <hr>
+    </div>
+    <div class="border">
 
-    <p class="toknow">
-        <a class="ref" href="array.html">Array</a>
-    </p>
+        <a class="" href="array.html">Array</a>
+
+        <div></div>
 
 
-
-    <script>
-        function info() {
-            console.log("You Have Clicked Me")
-            console.warn("Hello You Poped Me");
-            confirm("Hello!Please click on Inspect Element and Choose Console");
-        }
-
-        function action() {
-            if (action('add')) {
-                var a = document.getElementById('f1num').value;
-                var b = document.getElementById('f2num').value;
-                var c = a + b;
-                document.getElementById('ans').value = +c;
+        <script>
+            function info() {
+                console.log("You Have Clicked Me")
+                console.warn("Hello You Poped Me");
+                confirm("Hello!Please click on Inspect Element and Choose Console");
             }
-        }
-        var x = 5;
-        var x = 6;
-        console.log(x);
-        console.log("The latest Value or the last Value Is been printed on the console")
-        let y = 5;
-        // let y=6;
-        console.log(y);
-        console.log("SyntaxError: redeclaration of let y");
-        const z = 5;
-        // const z = 6;
-        console.log(z);
-        console.log("SyntaxError: redeclaration of const z");
 
-    </script>
+            function action(addition) {
+                document.getElementById('add').value
+            }
+
+            var x = 5;
+            var x = 6;
+            console.log(x);
+            console.log("The latest Value or the last Value Is been printed on the console")
+            let y = 5;
+            // let y=6;
+            console.log(y);
+            console.log("SyntaxError: redeclaration of let y");
+            const z = 5;
+            // const z = 6;
+            console.log(z);
+            console.log("SyntaxError: redeclaration of const z");
+
+        </script>
 </body>
 
 </html>

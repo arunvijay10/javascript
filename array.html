@@ -33,6 +33,25 @@
             margin-left: 608px;
             /* to move a btn from left to write we have use margin-left */
         }
+
+        .show {
+            padding: -13px;
+            margin-left: 559px;
+            margin-top: 21px;
+        }
+
+        #box {
+            height: 400px;
+            width: 100%;
+
+        }
+
+        .avj {
+
+            margin-left: 290px;
+            color: papayawhip;
+            font-size: 86px;
+        }
     </style>
     <h1 class="array">
         <div class="div">Array</div>
@@ -40,28 +59,55 @@
     <button class="btn" ondblclick="show()">Read Message!</button>
     <br>
 
-    <input type="text" id="inp">
+    <input class='show' type="text" id="inp">
     <button onclick="display()">Show-Text</button>
     <h1 id="showme"></h1>
+    <br>
+
+    <div id="box">
+        <h1 class="avj">Write Arun-Vijay</h1>
+        <br>
+        <marquee class="avj">Write Arun Vijay In Text Box To See The Magic</marquee>
+    </div>
+    <div class="btn-col">
+
+
+
+        <button onclick="color('red')">Red</button>
+        <button onclick="color('green')">Green</button>
+        <button onclick="color('yellow')">Yellow</button>
+        <button onclick="color('Pink')">Pink</button>
+        <button onclick="color('purple')">Purple</button>
+        <button onclick="color('blue')">Blue</button>
+    </div>
 
     <script>
+
+
+
+        function color(col) {
+            document.getElementById("box").style.backgroundColor = col
+        }
+
+
+
+
+
         function display() {
             var store = document.getElementById("inp").value
-            document.getElementById("showme").innerHTML=store
+            document.getElementById("showme").innerHTML = store
             console.log(store)
-            if(store=="arun vijay")
-            {
+            if (store == "arun vijay") {
                 console.log("He Is A Trillionare")
                 alert("He Is A Trillionare")
             }
-            else if(store=="Arun Vijay")
-            {
+            else if (store == "Arun Vijay") {
                 alert("He Is A Trillionare And A Helping Hand")
 
             }
         }
 
-        
+
 
         function show() {
             confirm("Please right Click On The Inspect Element and Go To Console To See The Output");
