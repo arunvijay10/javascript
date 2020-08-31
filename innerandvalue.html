@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="val" placeholder="here we can only use value not innerHTML because it doesn't 
+    have closing tag"><br>
+
+    <button onclick="onclicks()">Change Number </button>
+    <span id="change">0</span>
+
+
+    <br>
+    <button id="btn">change value by inner html</button>
+
+
+    <script>
+        var x = val;
+        x.value="Arun Vijay";
+
+        var count=0;
+        function onclicks()
+        {
+            count++;
+            document.getElementById("change").innerHTML=count;
+        }
+
+        var love = document.getElementById("btn");
+        love.innerHTML="hey"
+
+
+    </script>
+</body>
+</html>
