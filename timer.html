@@ -6,6 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TImer</h1>
+    <h1>Timer</h1>
+<span id="counting"></span>
+
+<script>
+    // setInterval(function(){
+    // document.write("Arun Vijay")
+    // },1000);
+
+  
+  
+  
+  
+    // var x=0;
+    // var c=setInterval(function(){
+    //     document.write("hey");
+    //     x++;
+    //     if(x>=10)
+    //     clearInterval(c)
+        
+    var r=10;
+     var x= setInterval(function()
+     {
+      
+         document.getElementById("counting").innerHTML=r;
+         r--;
+         if(r==0)
+         clearInterval(x);
+         },1000);
+
+
+</script>
+
 </body>
 </html>
