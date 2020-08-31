@@ -9,6 +9,7 @@
     <input type="text" id ="name" placeholder="nameisname">
     <input type="text" class="info">
     <input type="text" class="code">
+    <input onkeypress="pressing(this)" type="text" id="press">
 
     <script>
         var x = document.getElementById('name');
@@ -24,10 +25,19 @@
         var b = document.querySelector('input');
         // alert(b);
         var c = document.querySelectorAll('input');
-        alert(c);
+        // alert(c);
 
         var k=document.querySelectorAll('input');
         k[2].value="arun vijay";
+
+        var name1="Arun Vijay's";
+        console.log(this.name1);
+
+        function pressing(be)
+        {
+            console.log(be.value);
+        }
+
     </script>
 </body>
 </html>
