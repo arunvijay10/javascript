@@ -13,7 +13,9 @@
         function cont(){
         var m= document.getElementById("show");
         var x =new Date();
-        m.innerHTML=x;
+        var strings = x.getHours()%12+" : "+ x.getMinutes()+ ": "+x.getSeconds(); 
+        m.innerHTML=strings;
+
         
         setInterval(function(){
             cont();
