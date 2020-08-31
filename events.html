@@ -6,10 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+   
     <input type="text" id ="name" placeholder="nameisname">
+   
     <input type="text" class="info">
+   
     <input type="text" class="code">
+   
     <input onkeypress="pressing(this)" type="text" id="press">
+   
+    <input onkeyup="keyup(this)" type="text">
+
+
+    <input onkeydown="keydown(this)" type="text">
 
     <script>
         var x = document.getElementById('name');
@@ -27,16 +36,39 @@
         var c = document.querySelectorAll('input');
         // alert(c);
 
+   
         var k=document.querySelectorAll('input');
         k[2].value="arun vijay";
 
+   
+   
         var name1="Arun Vijay's";
         console.log(this.name1);
 
+   
+   
         function pressing(be)
         {
             console.log(be.value);
         }
+
+   
+   
+        function keyup(fet)
+        {
+            console.log(fet.value);
+        }
+
+
+
+
+        function keydown(vsc)
+        {
+            console.log(vsc.value);
+        }
+
+
+
 
     </script>
 </body>
