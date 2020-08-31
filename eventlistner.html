@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ca">Event Listner</h1>
+    <h1>Mouse On</h1>
+    <div class="container">
+        <div class="div">
+            <div>
+                hello
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    var x= document.getElementById("ca");
+    x.addEventListener("mouseleave",function(){
+        console.log("hello");
+    });
+
+
+    // document.addEventListener("mouseover",function(eve){
+    //     console.log(eve);
+    // })
+
+
+    document.addEventListener("mouseover",function(eve){
+        console.log(eve.clientX +"" +     + +eve.clientY+ " ");
+    })
+</script>
+</body>
+</html>
